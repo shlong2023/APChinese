@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;600;700;900&family=Noto+Sans+SC:wght@300;400;500;700&display=swap');
+
+  :root {
+    --ink: #1a1a1a;
+    --paper: #fdf8f0;
+    --accent: #b8383b;
+    --accent-light: #f3e0d6;
+    --border: #d4c5a9;
+    --muted: #6b6356;
+    --heading-bg: #2c2420;
+    --heading-fg: #f5ead6;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    font-family: 'Noto Sans SC', sans-serif;
+    background: var(--paper);
+    color: var(--ink);
+    line-height: 2;
+    font-size: 16px;
+    padding: 0;
+  }
+
+  .page {
+    max-width: 820px;
+    margin: 0 auto;
+    padding: 40px 48px 60px;
+  }
+
+  /* Header */
+  .doc-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    border-bottom: 2px solid var(--accent);
+    padding-bottom: 8px;
+    margin-bottom: 32px;
+    font-size: 14px;
+    color: var(--muted);
+    font-weight: 500;
+  }
+
+  /* Title block */
+  .title-block {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+
+  .title-block .en {
+    font-family: 'Noto Serif SC', serif;
+    font-size: 15px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: var(--muted);
+    margin-bottom: 4px;
+  }
+
+  .title-block h1 {
+    font-family: 'Noto Serif SC', serif;
+    font-size: 32px;
+    font-weight: 900;
+    color: var(--accent);
+    margin-bottom: 4px;
+  }
+
+  .title-block .subtitle {
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--muted);
+    letter-spacing: 4px;
+  }
+
+  /* Section headings */
+  h2 {
+    font-family: 'Noto Serif SC', serif;
+    font-size: 22px;
+    font-weight: 700;
+    color: var(--heading-fg);
+    background: var(--heading-bg);
+    padding: 10px 20px;
+    margin: 40px 0 20px;
+    border-left: 5px solid var(--accent);
+  }
+
+  h3 {
+    font-family: 'Noto Serif SC', serif;
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--accent);
+    margin: 28px 0 12px;
+    padding-bottom: 4px;
+    border-bottom: 1px solid var(--border);
+  }
+
+  h4 {
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--ink);
+    margin: 20px 0 8px;
+  }
+
+  p {
+    margin-bottom: 14px;
+    text-align: justify;
+  }
+
+  ul {
+    margin: 8px 0 16px 24px;
+    list-style: none;
+  }
+
+  ul li {
+    position: relative;
+    padding-left: 18px;
+    margin-bottom: 6px;
+  }
+
+  ul li::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 14px;
+    width: 8px;
+    height: 8px;
+    background: var(--accent);
+    border-radius: 50%;
+  }
+
+  .highlight {
+    background: var(--accent-light);
+    padding: 2px 6px;
+    border-radius: 3px;
+    font-weight: 600;
+  }
+
+  .book-title {
+    font-family: 'Noto Serif SC', serif;
+    font-weight: 700;
+  }
+
+  /* Info cards */
+  .info-card {
+    background: #fff;
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    padding: 20px 24px;
+    margin: 20px 0;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+  }
+
+  .info-card h4 {
+    margin-top: 0;
+    color: var(--accent);
+    font-family: 'Noto Serif SC', serif;
+  }
+
+  /* Footer */
+  .doc-footer {
+    border-top: 2px solid var(--accent);
+    margin-top: 48px;
+    padding-top: 12px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 13px;
+    color: var(--muted);
+  }
+
+  /* Page break hint */
+  .page-break {
+    border: none;
+    border-top: 1px dashed var(--border);
+    margin: 36px 0;
+  }
+
+  @media print {
+    body { background: #fff; font-size: 14px; }
+    .page { padding: 20px; }
+    h2 { break-after: avoid; }
+  }
+
+  @media (max-width: 600px) {
+    .page { padding: 20px 18px 40px; }
+    .title-block h1 { font-size: 26px; }
+    h2 { font-size: 18px; }
+    body { font-size: 15px; line-height: 1.9; }
+  }
+</style>
+</head>
+<body>
+<div class="page">
+
+
+  <div class="title-block">
+    <h1> 名人与历史</h1>
+  </div>
+
+  <!-- 孔子 -->
+  <h2>孔子与儒家学说</h2>
+
+  <p>孔子（公元前551–公元前479年）是中国古代杰出的思想家、教育家。孔子名字叫孔丘，"孔子"是人们对他的尊称。在中国古代，一个人的姓氏后加一个"子"字，是表示对这个人的尊敬的称呼。</p>
+
+  <h3>思想家</h3>
+  <p>孔子是中国儒家学说的创始人，建立了以<span class="highlight">"仁"</span>、<span class="highlight">"义"</span>、<span class="highlight">"礼"</span>为核心的儒家思想体系，二千多年以来，这一学说对中国文化产生了巨大的影响。</p>
+  <p>儒家学说在刚出现的时候，并没有立即成为主流思想。到了公元前二世纪，当时的中国已是一个强大、统一的中央集权制国家，统治者发现孔子创造的这一学说很适于维护封建社会的稳定，于是就把它定为整个社会必须遵从的主导思想。</p>
+
+  <h3>教育家</h3>
+  <ul>
+    <li>提倡<span class="highlight">"有教无类"</span>：教学生不分贫富贵贱、老幼、聪明愚笨、国家。</li>
+    <li>创办私学，广招学生。</li>
+    <li>打破了奴隶主贵族对学校教育的垄断，开创了教育普及的先河，为平民求学、参政创造了机会。</li>
+    <li>据说学生先后有三千多人，最有名的有72人。</li>
+  </ul>
+
+  <div class="info-card">
+    <h4>《论语》</h4>
+    <p>《论语》是一部记载孔子思想和言行的儒家经典著作，包括孔子的语录以及他和学生们的对话记录。在中国历史上有"半部《论语》治天下"的说法，意思是说，只要学到了《论语》中一半的理论，就足以去治理国家了。由此可见，孔子的思想对中国的影响力是非常大的。</p>
+  </div>
+
+  <hr class="page-break">
+
+  <!-- 秦始皇 -->
+  <h2>秦始皇（中国首位皇帝）</h2>
+
+  <p>秦始皇（前259年—前210年），嬴姓，秦氏，名政。秦庄襄王之子。出生于赵国都城邯郸，十三岁继承王位，三十九岁称皇帝，在位三十七年。中国历史上著名的政治家、战略家、改革家，首位完成华夏大一统的铁腕政治人物。他于公元前230年至公元前221年统一六国。建立首个多民族的中央集权国家，曾采用三皇之"皇"、五帝之"帝"构成"皇帝"的称号，是古今中外第一个称皇帝的封建王朝君主。</p>
+
+  <p>秦始皇在中央创建皇帝制度，实行三公九卿，管理国家大事。地方上废除分封制，代以郡县制，同时书同文，车同轨，统一度量衡。对外北击匈奴，南征百越，修筑万里长城，修筑灵渠，沟通水系。还把中国推向大一统时代，为建立专制主义中央集权制度开创新局面。对中国和世界历史产生深远影响，奠定中国两千余年政治制度基本格局，他被明代思想家李贽誉为<span class="highlight">"千古一帝"</span>。</p>
+
+  <h3>中国古代皇帝制度</h3>
+  <div class="info-card">
+    <p>中国古代社会以皇帝为中心，实行皇权至上和皇权专制的政治制度。它以君权神授学说为理论基础，用严格的名位等级、礼乐制度和皇位继承等各种规定和措施，集中突出皇帝个人的权威地位，保证皇帝高踞于国家机器之上，拥有至高无上、不受制约的绝对权力。皇帝制度自公元前221年秦始皇创立，经过历代王朝的不断发展、强化，直至1916年袁世凯的垮台而彻底废除，前后历时2137年。</p>
+  </div>
+
+  <h3>分封制</h3>
+  <div class="info-card">
+    <p>分封制也称分封制度或封建制，即狭义的"封建"，由共主或中央王朝给宗族姻亲、功臣子弟、前朝遗民分封领地和相当的治权，属于政治制度范畴。分封制与宗法制互为表里，紧密结合，在家庭范围内为宗法制，在国家范围内为分封制。</p>
+  </div>
+
+  <h3>郡县制</h3>
+  <div class="info-card">
+    <p>中国古代继宗法血缘分封制度之后出现的以郡统县的两级地方行政制度。盛行于秦汉，郡县制是古代中央集权制在地方政权上的体现。</p>
+  </div>
+
+  <h3>中央集权制度</h3>
+  <div class="info-card">
+    <p>中央集权是一种国家政权的制度，以国家职权统一于中央政府，削弱地方政府力量为标志，中国古代的政体——封建专制主义中央集权制度。主要特征是皇帝个人专断独裁，集国家最高权力于一身，从决策到行使军、政、财大权都具有独断性和随意性。公元前221年，秦始皇在统一六国以后就着手建立和健全专制主义的中央集权制度，以巩固其对全国的统治，此后，这种政治体制在中国延续了2000多年。</p>
+  </div>
+
+  <div class="doc-footer">
+    <span>石青 / Ilovechinese.ces@gmail.com / (919)338-2556</span>
+  </div>
+
+</div>
+</body>
+</html>
