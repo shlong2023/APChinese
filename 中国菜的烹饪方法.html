@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>中国菜的烹饪方法 · 中英对照</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;500;600;700&family=Ma+Shan+Zheng&family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --ink: #1f1a14;
+    --paper: #faf5ea;
+    --paper-edge: #f0e8d4;
+    --accent: #a0472a;
+    --accent-soft: #d4a574;
+    --rule: #d9cfbd;
+    --muted: #6b5f4c;
+    --zh: "Noto Serif SC", "Songti SC", serif;
+    --en: "Cormorant Garamond", "Georgia", serif;
+  }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; padding: 0; }
+  body {
+    background: var(--paper);
+    color: var(--ink);
+    font-family: var(--zh);
+    font-size: 17px;
+    line-height: 1.8;
+    padding: 40px 20px 80px;
+  }
+  .page {
+    max-width: 880px;
+    margin: 0 auto;
+    background: var(--paper);
+    padding: 60px 70px;
+    border: 1px solid var(--rule);
+    box-shadow: 0 2px 0 var(--paper-edge), 0 10px 40px rgba(60, 40, 20, 0.08);
+    position: relative;
+  }
+  .page::before {
+    content: "";
+    position: absolute;
+    top: 18px; left: 18px; right: 18px; bottom: 18px;
+    border: 1px solid var(--rule);
+    pointer-events: none;
+  }
+  .header {
+    text-align: center;
+    margin-bottom: 40px;
+    padding-bottom: 28px;
+    border-bottom: 2px double var(--rule);
+  }
+  .course {
+    font-size: 13px;
+    letter-spacing: 0.3em;
+    color: var(--muted);
+    text-transform: uppercase;
+    margin-bottom: 16px;
+  }
+  h1.title {
+    font-family: "Ma Shan Zheng", var(--zh);
+    font-size: 44px;
+    font-weight: 400;
+    margin: 0 0 10px;
+    color: var(--ink);
+    letter-spacing: 0.1em;
+  }
+  .subtitle {
+    font-family: var(--en);
+    font-style: italic;
+    color: var(--accent);
+    font-size: 22px;
+    letter-spacing: 0.05em;
+  }
+  .intro {
+    background: rgba(212, 165, 116, 0.12);
+    border-left: 3px solid var(--accent);
+    padding: 18px 24px;
+    margin: 30px 0 40px;
+    font-size: 16px;
+    line-height: 1.9;
+  }
+  .intro strong { color: var(--accent); font-weight: 600; }
+  .section-heading {
+    font-family: var(--en);
+    font-size: 15px;
+    text-transform: uppercase;
+    letter-spacing: 0.35em;
+    color: var(--accent);
+    margin: 40px 0 18px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid var(--rule);
+  }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 0 0 30px 0;
+  }
+  table tr {
+    border-bottom: 1px solid rgba(217, 207, 189, 0.6);
+  }
+  table tr:last-child { border-bottom: none; }
+  table tr:hover { background: rgba(212, 165, 116, 0.08); }
+  table td {
+    padding: 10px 12px;
+    vertical-align: top;
+  }
+  td.zh-term {
+    font-size: 20px;
+    font-weight: 500;
+    color: var(--accent);
+    white-space: nowrap;
+    width: 70px;
+  }
+  td.en-term {
+    font-family: var(--en);
+    font-size: 17px;
+    font-style: italic;
+    color: var(--ink);
+    width: 220px;
+  }
+  td.example {
+    font-size: 15px;
+    color: var(--muted);
+  }
+  td.example .zh-ex {
+    color: var(--ink);
+    font-weight: 500;
+  }
+  td.example .en-ex {
+    font-family: var(--en);
+    font-style: italic;
+    margin-left: 6px;
+  }
+  .footer {
+    margin-top: 50px;
+    padding-top: 20px;
+    border-top: 1px solid var(--rule);
+    text-align: center;
+    font-size: 12px;
+    color: var(--muted);
+    letter-spacing: 0.1em;
+  }
+  @media print {
+    body { background: white; padding: 0; font-size: 13px; }
+    .page { box-shadow: none; border: none; padding: 20px; }
+    .page::before { display: none; }
+    td.zh-term { font-size: 16px; }
+    table td { padding: 5px 8px; }
+  }
+  @media (max-width: 720px) {
+    body { font-size: 15px; padding: 20px 10px; }
+    .page { padding: 30px 20px; }
+    h1.title { font-size: 32px; }
+    td.zh-term { font-size: 17px; width: 50px; }
+    td.en-term { font-size: 14px; width: auto; }
+    td.example { display: none; }
+  }
+</style>
+</head>
+<body>
+<div class="page">
+  <div class="header">
+    <h1 class="title">中国菜的烹饪方法</h1>
+    <div class="subtitle">Chinese Cooking Methods · A Bilingual Reference</div>
+  </div>
+
+  <div class="intro">
+    中国菜的烹饪 / 烹调 (<em>cook</em>) 方法至少有 <strong>50 多种</strong>，但大体不离：煮 (boiling)、煲 / 炖 (stewing)、烧 / 焖 / 烩 (braising)、煎 (frying)、炒 (stir-frying)、爆 (quick-frying)、炸 (deep-frying)、扒 (frying and simmering)、煸 (sautéing)、煨 (simmering)、熏 (smoking)、烤 (roasting / barbecuing)、烘 (baking)、蒸 (steaming)、白灼 (scalding) 等基本方法。
+  </div>
+
+  <div class="section-heading">Basic Methods · 基本方法</div>
+  <table>
+    <tr><td class="zh-term">煮</td><td class="en-term">boiled</td><td class="example"><span class="zh-ex">煮咸牛肉</span><span class="en-ex">— Boiled Corned Beef</span></td></tr>
+    <tr><td class="zh-term">煲 / 炖</td><td class="en-term">stewed</td><td class="example"><span class="zh-ex">清炖牛肉</span><span class="en-ex">— Stewed Ox Tail in Clear Soup</span></td></tr>
+    <tr><td class="zh-term">烧</td><td class="en-term">braised</td><td class="example"><span class="zh-ex">红烧牛蹄</span><span class="en-ex">— Braised Ox Trotters in Brown Sauce</span></td></tr>
+    <tr><td class="zh-term">煎</td><td class="en-term">(pan-)fried</td><td class="example"><span class="zh-ex">煎明虾</span><span class="en-ex">— Fried Prawns</span></td></tr>
+    <tr><td class="zh-term">炒</td><td class="en-term">stir-fried</td><td class="example"><span class="zh-ex">炒鸡丁</span><span class="en-ex">— Stir-Fried Chicken Dices</span></td></tr>
+    <tr><td class="zh-term">爆</td><td class="en-term">quick-fried</td><td class="example"><span class="zh-ex">葱爆羊肉</span><span class="en-ex">— Quick-Fried Lamb with Scallion in Ginger Sauce</span></td></tr>
+    <tr><td class="zh-term">炸</td><td class="en-term">deep-fried</td><td class="example"><span class="zh-ex">炸大虾</span><span class="en-ex">— Deep-Fried Prawns</span></td></tr>
+    <tr><td class="zh-term">扒</td><td class="en-term">fried and simmered</td><td class="example"><span class="zh-ex">虾子扒海参</span><span class="en-ex">— Fried and Simmered Sea Cucumber with Shrimp Roe</span></td></tr>
+    <tr><td class="zh-term">煸</td><td class="en-term">sautéed</td><td class="example"><span class="zh-ex">干煸鳝鱼</span><span class="en-ex">— Sautéed Eel Slices</span></td></tr>
+    <tr><td class="zh-term">煨</td><td class="en-term">simmered</td><td class="example"><span class="zh-ex">煨牛肉</span><span class="en-ex">— Simmered Beef</span></td></tr>
+    <tr><td class="zh-term">焖</td><td class="en-term">braised</td><td class="example"><span class="zh-ex">黄酒焖猪排</span><span class="en-ex">— Braised Pork Chops in Rice Wine</span></td></tr>
+    <tr><td class="zh-term">烩</td><td class="en-term">braised</td><td class="example"><span class="zh-ex">烩鸡丝</span><span class="en-ex">— Braised Chicken Shreds with Peas</span></td></tr>
+    <tr><td class="zh-term">熏</td><td class="en-term">smoked</td><td class="example"><span class="zh-ex">熏鱼</span><span class="en-ex">— Smoked Fish</span></td></tr>
+    <tr><td class="zh-term">烘</td><td class="en-term">baked</td><td class="example"><span class="zh-ex">烘鸽</span><span class="en-ex">— Baked Pigeon</span></td></tr>
+    <tr><td class="zh-term">蒸</td><td class="en-term">steamed</td><td class="example"><span class="zh-ex">蒸鲜鱼</span><span class="en-ex">— Steamed Fresh Fish</span></td></tr>
+    <tr><td class="zh-term">酱 / 醋</td><td class="en-term">marinated</td><td class="example"><span class="zh-ex">酱鸡</span><span class="en-ex">— Marinated Chicken</span></td></tr>
+    <tr><td class="zh-term">卤</td><td class="en-term">spicy; stewed in gravy</td><td class="example"><span class="zh-ex">卤鸭</span><span class="en-ex">— Spicy Duck</span></td></tr>
+    <tr><td class="zh-term">涮</td><td class="en-term">instant-boiled</td><td class="example"><span class="zh-ex">涮羊肉</span><span class="en-ex">— Instant-Boiled Mutton Slices</span></td></tr>
+    <tr><td class="zh-term">酿</td><td class="en-term">stuffed</td><td class="example"><span class="zh-ex">酿青椒</span><span class="en-ex">— Stuffed Green Pepper</span></td></tr>
+    <tr><td class="zh-term">烤</td><td class="en-term">roast; barbecued</td><td class="example"><span class="zh-ex">烤鹅</span><span class="en-ex">— Roast Goose</span></td></tr>
+  </table>
+
+  <div class="section-heading">Compound Styles · 常见做法</div>
+  <table>
+    <tr><td class="zh-term">清蒸</td><td class="en-term">steamed (in clear soup)</td><td class="example"><span class="zh-ex">清蒸桂鱼</span><span class="en-ex">— Steamed Mandarin Fish</span></td></tr>
+    <tr><td class="zh-term">清炖</td><td class="en-term">stewed in clear soup</td><td class="example"><span class="zh-ex">清炖甲鱼</span><span class="en-ex">— Stewed Turtle in Clear Soup</span></td></tr>
+    <tr><td class="zh-term">白灼 / 嫩煮</td><td class="en-term">scalded</td><td class="example"><span class="zh-ex">白灼海虾</span><span class="en-ex">— Scalded Prawns</span></td></tr>
+    <tr><td class="zh-term">红烧</td><td class="en-term">braised in brown sauce</td><td class="example"><span class="zh-ex">红烧蹄筋</span><span class="en-ex">— Braised Pork Tendon in Brown Sauce</span></td></tr>
+    <tr><td class="zh-term">干烧</td><td class="en-term">in pepper sauce</td><td class="example"><span class="zh-ex">干烧干贝</span><span class="en-ex">— Scallop in Pepper Sauce</span></td></tr>
+    <tr><td class="zh-term">麻辣</td><td class="en-term">with hot pepper</td><td class="example"><span class="zh-ex">麻辣豆腐</span><span class="en-ex">— Bean Curd with Hot Pepper / Spicy Bean Curd</span></td></tr>
+    <tr><td class="zh-term">酱爆</td><td class="en-term">in bean sauce</td><td class="example"><span class="zh-ex">酱爆肉丁</span><span class="en-ex">— Diced Pork in Bean Sauce</span></td></tr>
+    <tr><td class="zh-term">鱼香</td><td class="en-term">in (spicy) garlic sauce</td><td class="example"><span class="zh-ex">鱼香肉丝</span><span class="en-ex">— Shredded Pork in Garlic Sauce</span></td></tr>
+    <tr><td class="zh-term">糖醋</td><td class="en-term">with sweet and sour sauce</td><td class="example"><span class="zh-ex">糖醋排骨</span><span class="en-ex">— Spareribs with Sweet and Sour Sauce</span></td></tr>
+    <tr><td class="zh-term">宫保</td><td class="en-term">with chili and peanuts</td><td class="example"><span class="zh-ex">宫保鸡丁</span><span class="en-ex">— Diced Chicken with Chili and Peanuts</span></td></tr>
+    <tr><td class="zh-term">脆皮</td><td class="en-term">crisp (in spicy sauce)</td><td class="example"><span class="zh-ex">脆皮鱼</span><span class="en-ex">— Crisp Fish</span></td></tr>
+    <tr><td class="zh-term">香酥</td><td class="en-term">crisp fried</td><td class="example"><span class="zh-ex">香酥鸡</span><span class="en-ex">— Crisp Fried Chicken</span></td></tr>
+    <tr><td class="zh-term">焦熘</td><td class="en-term">fried in sauce</td><td class="example"><span class="zh-ex">焦熘鱼片</span><span class="en-ex">— Fried Fish Slices in Sauce</span></td></tr>
+    <tr><td class="zh-term">甜酸</td><td class="en-term">sweet and sour</td><td class="example"><span class="zh-ex">甜酸肉</span><span class="en-ex">— Sweet &amp; Sour Pork</span></td></tr>
+    <tr><td class="zh-term">胡辣</td><td class="en-term">with pepper and chili</td><td class="example"><span class="zh-ex">胡辣海参</span><span class="en-ex">— Sea Slug with Pepper and Chili</span></td></tr>
+    <tr><td class="zh-term">油淋</td><td class="en-term">drip-fried with oil</td><td class="example"><span class="zh-ex">油淋兔</span><span class="en-ex">— Drip-Fried Rabbit with Oil</span></td></tr>
+    <tr><td class="zh-term">干煸</td><td class="en-term">dry-sautéed</td><td class="example"><span class="zh-ex">干煸季豆</span><span class="en-ex">— Dry-Sautéed String Beans</span></td></tr>
+    <tr><td class="zh-term">盐水</td><td class="en-term">boiled in salt water</td><td class="example"><span class="zh-ex">盐水虾</span><span class="en-ex">— Boiled Shrimps in Salt Water</span></td></tr>
+    <tr><td class="zh-term">家常</td><td class="en-term">home style</td><td class="example"><span class="zh-ex">家常豆腐</span><span class="en-ex">— Bean Curd Home Style</span></td></tr>
+    <tr><td class="zh-term">陈皮</td><td class="en-term">with spicy orange peel</td><td class="example"><span class="zh-ex">陈皮鸡</span><span class="en-ex">— Chicken in Spicy Orange Peel</span></td></tr>
+    <tr><td class="zh-term">回锅</td><td class="en-term">double-sautéed</td><td class="example"><span class="zh-ex">回锅肉</span><span class="en-ex">— Double-Sautéed Pork Slices</span></td></tr>
+    <tr><td class="zh-term">五香</td><td class="en-term">spiced</td><td class="example"><span class="zh-ex">五香牛肉</span><span class="en-ex">— Spiced Beef</span></td></tr>
+    <tr><td class="zh-term">干炸</td><td class="en-term">dry deep-fried</td><td class="example"><span class="zh-ex">干炸羊肉</span><span class="en-ex">— Dry Deep-Fried Lamb Breast</span></td></tr>
+    <tr><td class="zh-term">软炸</td><td class="en-term">soft deep-fried</td><td class="example"><span class="zh-ex">软炸里脊</span><span class="en-ex">— Soft-Fried Pork Fillet</span></td></tr>
+    <tr><td class="zh-term">酥炸</td><td class="en-term">crisp deep-fried</td><td class="example"><span class="zh-ex">酥炸羊脯</span><span class="en-ex">— Crisp Fried Lamb Breast</span></td></tr>
+    <tr><td class="zh-term">串烤</td><td class="en-term">skewered</td><td class="example"><span class="zh-ex">串烤羊肉青椒</span><span class="en-ex">— Skewered Mutton with Green Pepper</span></td></tr>
+    <tr><td class="zh-term">铁扒</td><td class="en-term">grilled</td><td class="example"><span class="zh-ex">铁扒乳鸽</span><span class="en-ex">— Grilled Baby Pigeon</span></td></tr>
+    <tr><td class="zh-term">烧烤</td><td class="en-term">roast</td><td class="example"><span class="zh-ex">烤乳猪</span><span class="en-ex">— Roast Suckling Pig</span></td></tr>
+    <tr><td class="zh-term">砂锅</td><td class="en-term">in casserole</td><td class="example"><span class="zh-ex">砂锅鱼翅</span><span class="en-ex">— Shark&rsquo;s Fin in Casserole</span></td></tr>
+    <tr><td class="zh-term">锅巴</td><td class="en-term">with sizzling / crispy rice crust</td><td class="example"><span class="zh-ex">锅巴海参</span><span class="en-ex">— Sea Slug with Sizzling / Crispy Rice Crust</span></td></tr>
+    <tr><td class="zh-term">芙蓉</td><td class="en-term">with eggwhite</td><td class="example"><span class="zh-ex">芙蓉海参</span><span class="en-ex">— Sea Cucumbers with Eggwhite</span></td></tr>
+    <tr><td class="zh-term">麻酱</td><td class="en-term">with sesame paste</td><td class="example"><span class="zh-ex">麻酱海参</span><span class="en-ex">— Beche-de-mer with Sesame Paste</span></td></tr>
+    <tr><td class="zh-term">三鲜</td><td class="en-term">with two other delicacies</td><td class="example"><span class="zh-ex">三鲜海参</span><span class="en-ex">— Sea Cucumbers with Other Two Delicacies</span></td></tr>
+    <tr><td class="zh-term">醋溜</td><td class="en-term">sautéed in vinegar sauce / gravy</td><td class="example"><span class="zh-ex">醋溜白菜</span><span class="en-ex">— Sautéed Cabbage in Vinegar Sauce / Gravy</span></td></tr>
+    <tr><td class="zh-term">糟溜</td><td class="en-term">in distilled grains sauce</td><td class="example"><span class="zh-ex">糟溜鸡片</span><span class="en-ex">— Sliced Chicken in Distilled Grains Sauce</span></td></tr>
+    <tr><td class="zh-term">凉拌</td><td class="en-term">in soy sauce</td><td class="example"><span class="zh-ex">凉拌海蜇</span><span class="en-ex">— Jellyfish in Soy Sauce</span></td></tr>
+    <tr><td class="zh-term">酸辣</td><td class="en-term">hot and sour</td><td class="example"><span class="zh-ex">酸辣黄瓜</span><span class="en-ex">— Hot and Sour Cucumber</span></td></tr>
+    <tr><td class="zh-term">姜汁</td><td class="en-term">in ginger sauce</td><td class="example"><span class="zh-ex">姜汁扁豆</span><span class="en-ex">— Snap Beans in Ginger Sauce</span></td></tr>
+    <tr><td class="zh-term">蚝油</td><td class="en-term">in oyster sauce</td><td class="example"><span class="zh-ex">蚝油香菇</span><span class="en-ex">— Mushrooms in Oyster Sauce</span></td></tr>
+    <tr><td class="zh-term">蒜泥</td><td class="en-term">with mashed garlic</td><td class="example"><span class="zh-ex">蒜泥胡豆</span><span class="en-ex">— Broad Beans with Mashed Garlic</span></td></tr>
+    <tr><td class="zh-term">什锦</td><td class="en-term">mixed; assorted</td><td class="example"><span class="zh-ex">什锦丝冬粉</span><span class="en-ex">— Assorted Shreds with Vermicelli</span></td></tr>
+  </table>
+
+</div>
+</body>
+</html>

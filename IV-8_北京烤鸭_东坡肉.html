@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>IV-8 北京烤鸭 · 东坡肉</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;500;600;700&family=Ma+Shan+Zheng&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --ink: #1a1a1a;
+    --paper: #fbf8f1;
+    --paper-edge: #f3ede0;
+    --accent: #8b2f2f;
+    --accent-soft: #c9a57a;
+    --rule: #d9cfbd;
+    --muted: #6b5f4c;
+  }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; padding: 0; }
+  body {
+    background: var(--paper);
+    color: var(--ink);
+    font-family: "Noto Serif SC", "Songti SC", "SimSun", serif;
+    font-size: 18px;
+    line-height: 2;
+    padding: 40px 20px 80px;
+    min-height: 100vh;
+  }
+  .page {
+    max-width: 780px;
+    margin: 0 auto;
+    background: var(--paper);
+    padding: 60px 70px;
+    border: 1px solid var(--rule);
+    box-shadow: 0 2px 0 var(--paper-edge), 0 10px 40px rgba(60, 40, 20, 0.08);
+    position: relative;
+  }
+  .page::before {
+    content: "";
+    position: absolute;
+    top: 18px; left: 18px; right: 18px; bottom: 18px;
+    border: 1px solid var(--rule);
+    pointer-events: none;
+  }
+  .header {
+    text-align: center;
+    margin-bottom: 40px;
+    padding-bottom: 24px;
+    border-bottom: 2px double var(--rule);
+  }
+  .course {
+    font-size: 13px;
+    letter-spacing: 0.3em;
+    color: var(--muted);
+    text-transform: uppercase;
+    margin-bottom: 8px;
+  }
+  .assignment {
+    font-size: 15px;
+    color: var(--accent);
+    letter-spacing: 0.1em;
+  }
+  h1.lesson-title {
+    font-family: "Ma Shan Zheng", "Noto Serif SC", serif;
+    font-size: 44px;
+    font-weight: 400;
+    margin: 36px 0 0;
+    color: var(--ink);
+    letter-spacing: 0.15em;
+    text-align: center;
+  }
+  .lesson-tag {
+    display: inline-block;
+    font-size: 13px;
+    color: var(--accent);
+    border: 1px solid var(--accent);
+    padding: 3px 14px;
+    margin: 16px auto 0;
+    letter-spacing: 0.25em;
+  }
+  .lesson-tag-wrap { text-align: center; }
+  section.lesson {
+    margin-top: 30px;
+  }
+  section.lesson + section.lesson {
+    margin-top: 60px;
+    padding-top: 40px;
+    border-top: 2px double var(--rule);
+  }
+  .name-line {
+    text-align: right;
+    font-size: 15px;
+    color: var(--muted);
+    margin-bottom: 30px;
+  }
+  .name-line span {
+    display: inline-block;
+    border-bottom: 1px solid var(--muted);
+    min-width: 180px;
+    margin-left: 8px;
+  }
+  p {
+    text-indent: 2em;
+    margin: 0 0 18px 0;
+    text-align: justify;
+    text-justify: inter-ideograph;
+  }
+  .quote {
+    text-align: center;
+    font-size: 20px;
+    color: var(--accent);
+    margin: 28px 0;
+    letter-spacing: 0.1em;
+    font-style: normal;
+  }
+  .ornament {
+    text-align: center;
+    color: var(--accent-soft);
+    margin: 20px 0;
+    font-size: 18px;
+    letter-spacing: 1em;
+  }
+  .footer {
+    margin-top: 50px;
+    padding-top: 20px;
+    border-top: 1px solid var(--rule);
+    text-align: center;
+    font-size: 12px;
+    color: var(--muted);
+    letter-spacing: 0.1em;
+  }
+  @media print {
+    body { background: white; padding: 0; }
+    .page { box-shadow: none; border: none; }
+    .page::before { display: none; }
+  }
+  @media (max-width: 640px) {
+    body { font-size: 16px; padding: 20px 10px; }
+    .page { padding: 30px 24px; }
+    h1.lesson-title { font-size: 34px; }
+  }
+</style>
+</head>
+<body>
+
+  <section class="lesson">
+    <h1 class="lesson-title">北京烤鸭</h1>
+  </div>
+
+    <p style="margin-top: 36px;">北京烤鸭是一种传统的中国名菜，已经有三百多年的历史了。</p>
+
+    <p>烤鸭的制法主要有两种：挂炉和焖炉。现在在北京经营最多的是挂炉烤鸭，就是用果木为燃料，把鸭子挂在特制的烤炉中进行烤制，这样烤出的鸭子既有鸭香又有果香，表皮酥脆，外焦里嫩。挂炉烤鸭店中最有名的是&ldquo;全聚德&rdquo;烤鸭店。</p>
+
+    <p>烤鸭的吃法也大有讲究。厨师把烤好的鸭子片成带皮的肉片儿，放在盘子里，鸭骨头留下做汤。吃的时候，先拿一张荷叶饼，然后用筷子夹起片好的鸭肉，在甜面酱里蘸一蘸，放在荷叶饼上，再放上一些葱段，最后把荷叶饼卷起来吃。这样吃的时候，不但有谷香、鸭香，还有葱香、酱香，真是美味可口。吃完烤鸭，再喝几口用鸭骨头做的汤，就更使人身心舒畅了。因为烤鸭的油很多，吃多了会感到腻，又加上吃了不少的大葱，所以吃完烤鸭后，一般还要再吃一点水果，比如梨、桃什么的，最理想的是西瓜。</p>
+
+    <p>吃烤鸭除了吃鸭肉、喝鸭汤以外，现在厨师们还能用鸭翅膀、鸭掌、鸭心等做出一百多种菜，形成了北京烤鸭独有的名菜——全鸭席。</p>
+
+    <div class="quote">&ldquo;不到长城非好汉，不吃烤鸭真遗憾&rdquo;</div>
+
+    <p>到北京来的中外游客，很多都想尝一尝北京烤鸭的美味，京烤鸭的名气越来越大，北京城里经营烤鸭的饭店也越来越多。现在你不用走很远，就可以很容易地吃到一顿美味可口的北京烤鸭了。</p>
+  </section>
+
+  <section class="lesson">
+    <h1 class="lesson-title">东坡肉</h1>
+</div>
+
+    <p style="margin-top: 36px;">苏东坡在杭州做刺史的时候，治理了西湖，替老百姓做了一件好事。老百姓感谢苏东坡治理西湖的好处，到过年时候，大家就抬猪担酒来给他拜年。</p>
+
+    <p>苏东坡收下很多猪肉，叫人把它切成方块，加冰糖、绍兴酒和酱油，用慢火烧得红红的，然后再按治理西湖的民工花名册，每家一块，将肉分送给他们过年。</p>
+
+    <p>那时，杭州有家大菜馆，菜馆老板见人们都夸说&ldquo;东坡肉&rdquo;好吃，就和厨师商量，把猪肉切成方块，加冰糖、绍兴酒和酱油，用慢火烧得红酥酥的；挂出牌子，也取名为&ldquo;东坡肉&rdquo;。</p>
+
+    <p>苏东坡被调职后，杭州的老百姓忘不了他的好处，&ldquo;东坡肉&rdquo;也一代一代地传下来，直到今天，还是杭州的一道名菜。</p>
+  </section>
+
+</div>
+</body>
+</html>

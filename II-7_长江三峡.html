@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>II-7 长江三峡</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;500;600;700&family=Ma+Shan+Zheng&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --ink: #1a1a1a;
+    --paper: #fbf8f1;
+    --paper-edge: #f3ede0;
+    --accent: #8b2f2f;
+    --accent-soft: #c9a57a;
+    --rule: #d9cfbd;
+    --muted: #6b5f4c;
+  }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; padding: 0; }
+  body {
+    background: var(--paper);
+    color: var(--ink);
+    font-family: "Noto Serif SC", "Songti SC", "SimSun", serif;
+    font-size: 18px;
+    line-height: 2;
+    padding: 40px 20px 80px;
+    min-height: 100vh;
+  }
+  .page {
+    max-width: 780px;
+    margin: 0 auto;
+    background: var(--paper);
+    padding: 60px 70px;
+    border: 1px solid var(--rule);
+    box-shadow: 0 2px 0 var(--paper-edge), 0 10px 40px rgba(60, 40, 20, 0.08);
+    position: relative;
+  }
+  .page::before {
+    content: "";
+    position: absolute;
+    top: 18px; left: 18px; right: 18px; bottom: 18px;
+    border: 1px solid var(--rule);
+    pointer-events: none;
+  }
+  .header {
+    text-align: center;
+    margin-bottom: 40px;
+    padding-bottom: 24px;
+    border-bottom: 2px double var(--rule);
+  }
+  .course {
+    font-size: 13px;
+    letter-spacing: 0.3em;
+    color: var(--muted);
+    text-transform: uppercase;
+    margin-bottom: 8px;
+  }
+  .assignment {
+    font-size: 15px;
+    color: var(--accent);
+    margin-bottom: 18px;
+    letter-spacing: 0.1em;
+  }
+  h1.title {
+    font-family: "Ma Shan Zheng", "Noto Serif SC", serif;
+    font-size: 48px;
+    font-weight: 400;
+    margin: 0;
+    color: var(--ink);
+    letter-spacing: 0.15em;
+  }
+  .lesson-tag {
+    display: inline-block;
+    font-size: 14px;
+    color: var(--accent);
+    background: transparent;
+    border: 1px solid var(--accent);
+    padding: 3px 12px;
+    margin-top: 16px;
+    letter-spacing: 0.2em;
+  }
+  .name-line {
+    text-align: right;
+    font-size: 15px;
+    color: var(--muted);
+    margin-bottom: 30px;
+  }
+  .name-line span {
+    display: inline-block;
+    border-bottom: 1px solid var(--muted);
+    min-width: 180px;
+    margin-left: 8px;
+  }
+  p {
+    text-indent: 2em;
+    margin: 0 0 18px 0;
+    text-align: justify;
+    text-justify: inter-ideograph;
+  }
+  .ornament {
+    text-align: center;
+    color: var(--accent-soft);
+    margin: 24px 0;
+    font-size: 18px;
+    letter-spacing: 1em;
+  }
+  .footer {
+    margin-top: 50px;
+    padding-top: 20px;
+    border-top: 1px solid var(--rule);
+    text-align: center;
+    font-size: 12px;
+    color: var(--muted);
+    letter-spacing: 0.1em;
+  }
+  @media print {
+    body { background: white; padding: 0; }
+    .page { box-shadow: none; border: none; }
+    .page::before { display: none; }
+  }
+  @media (max-width: 640px) {
+    body { font-size: 16px; padding: 20px 10px; }
+    .page { padding: 30px 24px; }
+    h1.title { font-size: 36px; }
+  }
+</style>
+</head>
+<body>
+<div class="page">
+  <div class="header">
+    <h1 class="title">长江三峡</h1>
+  </div>
+
+  <p>长江是中国第一大河流。她从青藏高原上的雪山上流下来，流过四川、湖北、湖南等地，最后从上海流入大海。</p>
+
+  <p>长江在四川和湖北之间穿过一座叫巫山的大山。巫山有二百多公里长。长江在巫山中穿行，形成了瞿塘峡、巫峡、西陵峡三个大峡谷。这就是人们所说的长江三峡。</p>
+
+  <p>三峡的江面很窄，两岸都是悬崖峭壁；峡谷中水流很急，水中有许多礁石险滩。人们乘船经过这里时都特别害怕，因为一不小心，船不是碰到礁石就是撞上峭壁。峡谷的最窄处，你抬头仰望，在两岸高高的峭壁之间，只能望见那细细的一线天。这时你伸出左手，好像就要摸着那边峭壁上的青苔；探出右手，似乎也能采到这边石缝中的野花。</p>
+
+  <p>三峡是世界有名的风景区，在那里你能看到各种珍奇的飞禽走兽；能看到许多像飘带一样的瀑布。坐船行走在峡谷之中，船随着水走，水绕着山行。两岸美丽的景色就像一幅幅的画，一个接一个地展现在你的眼前，让你觉得就像是穿行在一个奇妙无比的天然画廊之中。</p>
+
+  <p>三峡沿岸有十二座山峰，其中最奇妙的是巫峡中的神女峰。神女峰远远地看去，就像是一个美丽动人的少女，静静地站立在山顶之上。每当船行走到神女峰下时，本来晴朗朗的天空，忽然有几片薄薄的云雾轻轻地飘过来，接着便有点点雨滴飘洒在你我的脸上。还不等去擦拭，那云、那雨，又都不见了。有人说这是神女的泪珠，也有人说这是神奇的&ldquo;巫山云雨&rdquo;。</p>
+
+  <p>三峡是如此的美丽，如此的神奇，难怪所有的人都喜欢她。</p>
+
+  <div class="ornament">· · ·</div>
+
+  <p>十分可惜的是，三峡现在正在建一座特别大的大水坝。若干年后，水坝建好了，江面就会变得非常宽阔。到时候相当多的名胜古迹将会被淹没在水底下，像&ldquo;一线天&rdquo;、&ldquo;巫山云雨&rdquo;那样的景色可能就再也看不到了。</p>
+
+  <p>不过，水坝建好后的三峡也一定会有另外一种美丽的景色。况且，那时候的三峡，江面宽阔、水流平缓，没有什么礁石和险滩也不会再有什么危险了。</p>
+
+</div>
+</body>
+</html>
