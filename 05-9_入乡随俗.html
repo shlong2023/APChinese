@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>III-9 入乡随俗 / 入鄉隨俗</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;600;700&family=Noto+Sans+SC:wght@300;400;500&display=swap');
+
+  :root {
+    --ink: #1a1410;
+    --paper: #faf7f2;
+    --accent: #8b2e12;
+    --rule: #c8b99a;
+    --muted: #6b5e4e;
+    --page-bg: #f0ebe0;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    background: var(--page-bg);
+    font-family: 'Noto Sans SC', 'PingFang SC', 'Microsoft YaHei', sans-serif;
+    color: var(--ink);
+    padding: 40px 20px;
+    min-height: 100vh;
+  }
+
+  .page {
+    max-width: 820px;
+    margin: 0 auto;
+    background: var(--paper);
+    border: 1px solid var(--rule);
+    border-radius: 8px;
+    padding: 48px 56px 56px;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.10);
+  }
+
+  /* Header */
+  .doc-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    border-bottom: 2px solid var(--accent);
+    padding-bottom: 14px;
+    margin-bottom: 28px;
+  }
+
+  .course-info {
+    font-size: 12px;
+    color: var(--muted);
+    line-height: 1.8;
+  }
+
+  .course-info a {
+    color: var(--accent);
+    text-decoration: none;
+  }
+
+  .name-line {
+    font-size: 13px;
+    color: var(--muted);
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding-top: 4px;
+  }
+
+  .name-line::after {
+    content: '';
+    display: inline-block;
+    width: 140px;
+    border-bottom: 1px solid var(--ink);
+  }
+
+  /* Title block */
+  .week-label {
+    text-align: center;
+    font-size: 13px;
+    color: var(--muted);
+    letter-spacing: 0.08em;
+    margin-bottom: 6px;
+  }
+
+  .main-title {
+    text-align: center;
+    font-family: 'Noto Serif SC', serif;
+    font-size: 28px;
+    font-weight: 700;
+    color: var(--accent);
+    letter-spacing: 0.12em;
+    margin-bottom: 28px;
+    position: relative;
+  }
+
+  .main-title::after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 3px;
+    background: var(--accent);
+    margin: 10px auto 0;
+    border-radius: 2px;
+  }
+
+  /* Body text */
+  .body-text {
+    font-family: 'Noto Serif SC', serif;
+    font-size: 16px;
+    line-height: 2.0;
+    color: var(--ink);
+    text-align: justify;
+    margin-bottom: 32px;
+  }
+
+  .body-text p {
+    margin-bottom: 16px;
+    text-indent: 2em;
+  }
+
+  /* Inline quotes */
+  .zh-quote {
+    color: var(--accent);
+    font-weight: 600;
+  }
+
+  /* Questions */
+  .questions-header {
+    font-family: 'Noto Serif SC', serif;
+    font-size: 14px;
+    color: var(--muted);
+    border-top: 1px solid var(--rule);
+    padding-top: 20px;
+    margin-bottom: 20px;
+    font-style: italic;
+  }
+
+  .questions-list {
+    list-style: none;
+    counter-reset: q;
+  }
+
+  .questions-list li {
+    counter-increment: q;
+    display: flex;
+    gap: 14px;
+    margin-bottom: 22px;
+    font-family: 'Noto Serif SC', serif;
+    font-size: 15px;
+    line-height: 1.85;
+    color: var(--ink);
+  }
+
+  .questions-list li::before {
+    content: counter(q) '.';
+    font-weight: 700;
+    color: var(--accent);
+    font-size: 16px;
+    min-width: 22px;
+    padding-top: 1px;
+  }
+
+  /* Footer */
+  .doc-footer {
+    margin-top: 32px;
+    border-top: 1px solid var(--rule);
+    padding-top: 10px;
+    font-size: 11px;
+    color: var(--rule);
+    text-align: right;
+  }
+</style>
+</head>
+<body>
+
+<!-- SIMPLIFIED -->
+<div class="page active" id="simplified">
+
+  <div class="main-title">入乡随俗</div>
+
+  <div class="body-text">
+    <p>中国是个文明古国，礼仪之邦。那么，你都知道哪些礼俗呢？</p>
+
+    <p>首先是礼貌用语。比如当你请求别人时，最好使用：<span class="zh-quote">"请、劳驾、对不起、麻烦您……、可以不可以……、能不能……、行不行……、要是您方便的话、要是不麻烦的话、要是您不介意的话……"</span>等等表示请求的词语或句式，这样听的人就会有耐心、很愿意帮助你了。</p>
+
+    <p>其次是见面，要使用恰当的称呼和招呼语，有时还要握手并寒暄几句。</p>
+
+    <p>还有做客，当你去别人家做客时，见了面主人会问：<span class="zh-quote">"今天冷不冷？""热坏了吧？"</span>如果是远道而来，主人会说：<span class="zh-quote">"一路辛苦了！""很抱歉，有失远迎！""走累了吧？"</span>然后，递上热毛巾、冷饮或热茶，还会拿来一些糖果、瓜子等。吃饭时，主人怕你自己不好意思夹菜，会主动为你夹菜，一边夹一边说：<span class="zh-quote">"没什么好吃的，都是些家常菜，你随便吃吧！"</span>这时，你应该立即端起碟子接菜，同时说：<span class="zh-quote">"谢谢，我自己来吧！"</span>倒酒也同样，有人为你倒酒时，你应该端起杯子以示礼貌。起身告辞时，主人多表示挽留：<span class="zh-quote">"再坐会儿吧！""时间还早呢！"</span>你回答：<span class="zh-quote">"不早了，你们也累了一天了，早点儿休息吧！"</span>或：<span class="zh-quote">"明天还有课呢！"</span>等，分手时，主人肯定会把你送到门外。这时，你要对主人说：<span class="zh-quote">"请留步！""请回吧！"</span>主人会说：<span class="zh-quote">"请慢走！""请走好！""不远送了！"</span>等。</p>
+
+    <p>再就是送礼。如果是你经常拜访的人家，不必每次都带什么礼物，如果正赶上年节、主人的大喜之日，或接受比较正式的邀请时，则一定不要空手。礼品种类要根据所送的对象而定，水果、点心、鲜花、工艺品、文具、首饰、衣服、儿童玩具等都可以，价格要根据具体情况以及与主人的关系远近来定，不一定贵，俗话说：<span class="zh-quote">"千里送鹅毛，礼轻情义重。"</span></p>
+  </div>
+
+  <div class="questions-header">请根据短文回答下列问题：请把你的答案写在另一张纸上。</div>
+  <ol class="questions-list">
+    <li>当你请别人帮忙时，最好使用什么礼貌用语？</li>
+    <li>去拜访朋友时，是否每次都要带礼物？如果需要带礼物，送什么比较好？</li>
+    <li>如果主人说：<span class="zh-quote">"没什么好吃的，都是些家常菜，你随便吃吧！"</span>，这是否意味着主人没有准备菜？</li>
+    <li>什么是"入乡随俗"？你是否有过"入乡随俗"的经历？</li>
+  </ol>
+
+</div>
+
+
+</body>
+</html>
